@@ -28,3 +28,4 @@ C:\Users\Owner\Documents\GitHub\Coffee-Shop\CoffeeShop\CoffeeShop\obj\Debug\Coff
 C:\Users\Owner\Documents\GitHub\Coffee-Shop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
 C:\Users\Owner\Documents\GitHub\Coffee-Shop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.xml
 C:\Users\Owner\Documents\GitHub\Coffee-Shop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+C:\Users\Owner\Documents\GitHub\Coffee-Shop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmOrders.resources
