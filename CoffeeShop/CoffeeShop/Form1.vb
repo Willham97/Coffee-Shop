@@ -8,10 +8,12 @@
     End Sub
 
     Private Sub btnSchedual_Click(sender As Object, e As EventArgs) Handles btnSchedual.Click
+        Dim box = New frmSchedual()
+        box.Show()
 
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-
+        Me.Close()
     End Sub
 End Class
