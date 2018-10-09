@@ -26,10 +26,10 @@ Partial Class frmAddOrders
         Me.txtProductId = New System.Windows.Forms.TextBox()
         Me.txtProductName = New System.Windows.Forms.TextBox()
         Me.lblProdName = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.lblCaseCost = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblProdId
@@ -45,6 +45,7 @@ Partial Class frmAddOrders
         '
         'txtProductId
         '
+        Me.txtProductId.AccessibleName = "txtProductId"
         Me.txtProductId.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProductId.Location = New System.Drawing.Point(239, 37)
         Me.txtProductId.Name = "txtProductId"
@@ -53,6 +54,8 @@ Partial Class frmAddOrders
         '
         'txtProductName
         '
+        Me.txtProductName.AccessibleDescription = "txtProductName"
+        Me.txtProductName.AccessibleName = "txtProductName"
         Me.txtProductName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProductName.Location = New System.Drawing.Point(239, 90)
         Me.txtProductName.Name = "txtProductName"
@@ -69,14 +72,6 @@ Partial Class frmAddOrders
         Me.lblProdName.Size = New System.Drawing.Size(114, 20)
         Me.lblProdName.TabIndex = 5
         Me.lblProdName.Text = "Product Name:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(239, 144)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(129, 26)
-        Me.TextBox2.TabIndex = 8
         '
         'lblCaseCost
         '
@@ -113,15 +108,25 @@ Partial Class frmAddOrders
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.AccessibleDescription = "txtCaseCost"
+        Me.TextBox1.AccessibleName = "txtCaseCost"
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(239, 144)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(129, 26)
+        Me.TextBox1.TabIndex = 71
+        '
         'frmAddOrders
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(484, 285)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.lblCaseCost)
         Me.Controls.Add(Me.txtProductName)
         Me.Controls.Add(Me.lblProdName)
@@ -138,8 +143,8 @@ Partial Class frmAddOrders
     Friend WithEvents txtProductId As TextBox
     Friend WithEvents txtProductName As TextBox
     Friend WithEvents lblProdName As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents lblCaseCost As Label
     Friend WithEvents btnSave As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
