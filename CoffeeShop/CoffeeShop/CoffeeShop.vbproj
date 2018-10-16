@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeTablevb.Designer.vb">
+      <DependentUpon>EmployeeTablevb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTablevb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -91,10 +97,10 @@
     <Compile Include="AddOrdersForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchedualForm.designer.vb">
-      <DependentUpon>SchedualForm.vb</DependentUpon>
+    <Compile Include="SchedulelForm.designer.vb">
+      <DependentUpon>SchedulelForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="SchedualForm.vb">
+    <Compile Include="SchedulelForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -120,6 +126,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EmployeeTablevb.resx">
+      <DependentUpon>EmployeeTablevb.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -129,8 +138,8 @@
     <EmbeddedResource Include="AddOrdersForm.resx">
       <DependentUpon>AddOrdersForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchedualForm.resx">
-      <DependentUpon>SchedualForm.vb</DependentUpon>
+    <EmbeddedResource Include="SchedulelForm.resx">
+      <DependentUpon>SchedulelForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
