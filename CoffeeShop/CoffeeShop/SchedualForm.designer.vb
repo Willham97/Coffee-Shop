@@ -22,6 +22,7 @@ Partial Class frmSchedual
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ScheduleGrid = New System.Windows.Forms.DataGridView()
@@ -31,14 +32,25 @@ Partial Class frmSchedual
         Me.ProjectDatabaseDataSet = New CoffeeShop.ProjectDatabaseDataSet()
         Me.ScheduleTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ScheduleTableTableAdapter = New CoffeeShop.ProjectDatabaseDataSetTableAdapters.ScheduleTableTableAdapter()
+
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.ScheduleGrid = New System.Windows.Forms.DataGridView()
+
         Me.TimeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MondayColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TuesdayColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WednesdayColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ThursdayColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+
         CType(Me.ScheduleGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProjectDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ScheduleTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+
+        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.btnEmployees = New System.Windows.Forms.Button()
+        Me.btnMenu = New System.Windows.Forms.Button()
+        CType(Me.ScheduleGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+
         Me.SuspendLayout()
         '
         'ScheduleGrid
@@ -53,18 +65,62 @@ Partial Class frmSchedual
         Me.ScheduleGrid.MultiSelect = False
         Me.ScheduleGrid.Name = "ScheduleGrid"
         Me.ScheduleGrid.ReadOnly = True
+
         Me.ScheduleGrid.RowHeadersWidth = 25
         Me.ScheduleGrid.RowTemplate.ReadOnly = True
         Me.ScheduleGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.ScheduleGrid.Size = New System.Drawing.Size(787, 595)
         Me.ScheduleGrid.TabIndex = 0
         '
+
+        Me.ScheduleGrid.RowTemplate.ReadOnly = True
+        Me.ScheduleGrid.Size = New System.Drawing.Size(543, 595)
+        Me.ScheduleGrid.TabIndex = 0
+        '
+        'TimeColumn
+        '
+        DataGridViewCellStyle1.Format = "t"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.TimeColumn.DefaultCellStyle = DataGridViewCellStyle1
+        Me.TimeColumn.HeaderText = "Times"
+        Me.TimeColumn.Name = "TimeColumn"
+        Me.TimeColumn.ReadOnly = True
+        '
+        'MondayColumn
+        '
+        Me.MondayColumn.HeaderText = "Monday"
+        Me.MondayColumn.Name = "MondayColumn"
+        Me.MondayColumn.ReadOnly = True
+        '
+        'TuesdayColumn
+        '
+        Me.TuesdayColumn.HeaderText = "Tuesday"
+        Me.TuesdayColumn.Name = "TuesdayColumn"
+        Me.TuesdayColumn.ReadOnly = True
+        '
+        'WednesdayColumn
+        '
+        Me.WednesdayColumn.HeaderText = "Wednesday"
+        Me.WednesdayColumn.Name = "WednesdayColumn"
+        Me.WednesdayColumn.ReadOnly = True
+        '
+        'ThursdayColumn
+        '
+        Me.ThursdayColumn.HeaderText = "Thursday"
+        Me.ThursdayColumn.Name = "ThursdayColumn"
+        Me.ThursdayColumn.ReadOnly = True
+        '
+
         'btnPrint
         '
         Me.btnPrint.BackColor = System.Drawing.Color.Gold
         Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrint.ForeColor = System.Drawing.SystemColors.ControlText
+
         Me.btnPrint.Location = New System.Drawing.Point(141, 623)
+
+        Me.btnPrint.Location = New System.Drawing.Point(12, 623)
+
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.Size = New System.Drawing.Size(157, 46)
         Me.btnPrint.TabIndex = 75
@@ -76,7 +132,11 @@ Partial Class frmSchedual
         Me.btnEmployees.BackColor = System.Drawing.Color.Gold
         Me.btnEmployees.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEmployees.ForeColor = System.Drawing.SystemColors.ControlText
+
         Me.btnEmployees.Location = New System.Drawing.Point(333, 623)
+
+        Me.btnEmployees.Location = New System.Drawing.Point(204, 623)
+
         Me.btnEmployees.Name = "btnEmployees"
         Me.btnEmployees.Size = New System.Drawing.Size(157, 46)
         Me.btnEmployees.TabIndex = 74
@@ -88,13 +148,18 @@ Partial Class frmSchedual
         Me.btnMenu.BackColor = System.Drawing.Color.Gold
         Me.btnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMenu.ForeColor = System.Drawing.SystemColors.ControlText
+
         Me.btnMenu.Location = New System.Drawing.Point(527, 623)
+
+        Me.btnMenu.Location = New System.Drawing.Point(398, 623)
+
         Me.btnMenu.Name = "btnMenu"
         Me.btnMenu.Size = New System.Drawing.Size(157, 46)
         Me.btnMenu.TabIndex = 73
         Me.btnMenu.Text = "Menu"
         Me.btnMenu.UseVisualStyleBackColor = False
         '
+
         'ProjectDatabaseDataSet
         '
         Me.ProjectDatabaseDataSet.DataSetName = "ProjectDatabaseDataSet"
@@ -147,12 +212,18 @@ Partial Class frmSchedual
         Me.ThursdayColumn.ReadOnly = True
         Me.ThursdayColumn.Width = 175
         '
+
+
         'frmSchedual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
+
         Me.ClientSize = New System.Drawing.Size(811, 690)
+
+        Me.ClientSize = New System.Drawing.Size(567, 690)
+
         Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.btnEmployees)
         Me.Controls.Add(Me.btnMenu)
@@ -160,22 +231,33 @@ Partial Class frmSchedual
         Me.Name = "frmSchedual"
         Me.Text = "Schedule"
         CType(Me.ScheduleGrid, System.ComponentModel.ISupportInitialize).EndInit()
+
         CType(Me.ProjectDatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ScheduleTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+
+
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents ScheduleGrid As DataGridView
+
     Friend WithEvents btnPrint As Button
     Friend WithEvents btnEmployees As Button
     Friend WithEvents btnMenu As Button
     Friend WithEvents ProjectDatabaseDataSet As ProjectDatabaseDataSet
     Friend WithEvents ScheduleTableBindingSource As BindingSource
     Friend WithEvents ScheduleTableTableAdapter As ProjectDatabaseDataSetTableAdapters.ScheduleTableTableAdapter
+
+
     Friend WithEvents TimeColumn As DataGridViewTextBoxColumn
     Friend WithEvents MondayColumn As DataGridViewTextBoxColumn
     Friend WithEvents TuesdayColumn As DataGridViewTextBoxColumn
     Friend WithEvents WednesdayColumn As DataGridViewTextBoxColumn
     Friend WithEvents ThursdayColumn As DataGridViewTextBoxColumn
+
+    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnEmployees As Button
+    Friend WithEvents btnMenu As Button
+
 End Class
