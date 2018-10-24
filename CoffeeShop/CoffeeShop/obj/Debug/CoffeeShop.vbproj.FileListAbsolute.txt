@@ -45,15 +45,18 @@ C:\Users\young\Downloads\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\Co
 C:\Users\young\Downloads\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
 C:\Users\young\Downloads\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.xml
 C:\Users\young\Downloads\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\Coffee-Shop-61362046e14e63843f86fb0afec3ba4fb18a7960\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbprojResolveAssemblyReference.cache
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmMenu.resources
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmEmployeeInput.resources
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmAddOrders.resources
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.ScedualForm.resources
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.Resources.resources
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmOrders.resources
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbproj.GenerateResource.cache
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbproj.CoreCompileInputs.cache
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.xml
-C:\Users\Owner\Downloads\Coffee-Shop-master (1)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbprojResolveAssemblyReference.cache
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmMenu.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmAddOrders.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.Resources.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmOrders.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbproj.GenerateResource.cache
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbproj.CoreCompileInputs.cache
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.xml
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\ProjectDatabase.accdb
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe.config
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.pdb
+C:\Users\Owner\Downloads\Coffee-Shop-master (2)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.xml

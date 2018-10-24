@@ -79,12 +79,6 @@
       <DependentUpon>MenuForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeInForm.Designer.vb">
-      <DependentUpon>EmployeeInForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeInForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AddOrdersForm.Designer.vb">
       <DependentUpon>AddOrdersForm.vb</DependentUpon>
     </Compile>
@@ -95,12 +89,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SchedualForm.designer.vb">
-      <DependentUpon>SchedualForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SchedualForm.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -123,19 +111,19 @@
     <Compile Include="OrdersForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SchedualForm.Designer.vb">
+      <DependentUpon>SchedualForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedualForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeInForm.resx">
-      <DependentUpon>EmployeeInForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddOrdersForm.resx">
       <DependentUpon>AddOrdersForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SchedualForm.resx">
-      <DependentUpon>SchedualForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -145,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersForm.resx">
       <DependentUpon>OrdersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedualForm.resx">
+      <DependentUpon>SchedualForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
