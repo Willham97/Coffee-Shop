@@ -1,5 +1,7 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+
 Partial Class SchedualForm
+
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +24,7 @@ Partial Class SchedualForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnBack = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,4 +67,5 @@ Partial Class SchedualForm
 
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btnBack As Button
+
 End Class
