@@ -91,6 +91,11 @@
     <Compile Include="AddOrdersForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ProjectDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SchedualForm.designer.vb">
       <DependentUpon>SchedualForm.vb</DependentUpon>
     </Compile>
@@ -153,6 +158,22 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="ProjectDatabaseDataSet.xsc">
+      <DependentUpon>ProjectDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDatabaseDataSet.xss">
+      <DependentUpon>ProjectDatabaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjectDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
