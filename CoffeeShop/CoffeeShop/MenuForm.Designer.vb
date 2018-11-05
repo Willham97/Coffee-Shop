@@ -61,7 +61,7 @@ Partial Class frmMenu
         Me.btnSchedual.Name = "btnSchedual"
         Me.btnSchedual.Size = New System.Drawing.Size(200, 55)
         Me.btnSchedual.TabIndex = 2
-        Me.btnSchedual.Text = "Schedual"
+        Me.btnSchedual.Text = "Schedule"
         Me.btnSchedual.UseVisualStyleBackColor = False
         '
         'btnExit

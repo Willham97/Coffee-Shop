@@ -72,6 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTimeForm.Designer.vb">
+      <DependentUpon>AddTimeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddTimeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.vb">
+      <DependentUpon>EmployeeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -111,14 +123,23 @@
     <Compile Include="OrdersForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchedualForm.Designer.vb">
-      <DependentUpon>SchedualForm.vb</DependentUpon>
+    <Compile Include="ProjectDatabaseDataSet.vb">
+      <DependentUpon>ProjectDatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SchedualForm.vb">
+    <Compile Include="ScheduleForm.Designer.vb">
+      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleForm.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddTimeForm.resx">
+      <DependentUpon>AddTimeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -134,8 +155,8 @@
     <EmbeddedResource Include="OrdersForm.resx">
       <DependentUpon>OrdersForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchedualForm.resx">
-      <DependentUpon>SchedualForm.vb</DependentUpon>
+    <EmbeddedResource Include="ScheduleForm.resx">
+      <DependentUpon>ScheduleForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
