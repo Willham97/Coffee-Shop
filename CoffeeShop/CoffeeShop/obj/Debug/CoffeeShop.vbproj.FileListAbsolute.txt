@@ -76,3 +76,21 @@ C:\Users\Owner\Downloads\Coffee-Shop-master (3)\Coffee-Shop-master\CoffeeShop\Co
 C:\Users\Owner\Downloads\Coffee-Shop-master (3)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe
 C:\Users\Owner\Downloads\Coffee-Shop-master (3)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.pdb
 C:\Users\Owner\Downloads\Coffee-Shop-master (3)\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.xml
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\ProjectDatabase.accdb
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe.config
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.pdb
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.xml
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbprojResolveAssemblyReference.cache
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.EmployeeForm.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmMenu.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmAddOrders.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.Resources.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.frmOrders.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbproj.GenerateResource.cache
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.vbproj.CoreCompileInputs.cache
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.xml
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.AddTimeForm.resources
+C:\Users\Owner\Downloads\Coffee-Shop-master\Coffee-Shop-master\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.ScheduleForm.resources

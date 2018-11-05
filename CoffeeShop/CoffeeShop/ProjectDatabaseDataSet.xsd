@@ -190,9 +190,9 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" />
-              <xs:element name="Day" msprop:Generator_ColumnVarNameInTable="columnDay" msprop:Generator_ColumnPropNameInRow="Day" msprop:Generator_ColumnPropNameInTable="DayColumn" msprop:Generator_UserColumnName="Day" type="xs:unsignedByte" />
-              <xs:element name="TimeIn" msprop:Generator_ColumnVarNameInTable="columnTimeIn" msprop:Generator_ColumnPropNameInRow="TimeIn" msprop:Generator_ColumnPropNameInTable="TimeInColumn" msprop:Generator_UserColumnName="TimeIn" type="xs:short" />
-              <xs:element name="TimeOut" msprop:Generator_ColumnVarNameInTable="columnTimeOut" msprop:Generator_ColumnPropNameInRow="TimeOut" msprop:Generator_ColumnPropNameInTable="TimeOutColumn" msprop:Generator_UserColumnName="TimeOut" type="xs:short" />
+              <xs:element name="Day" msprop:Generator_ColumnVarNameInTable="columnDay" msprop:Generator_ColumnPropNameInRow="Day" msprop:Generator_ColumnPropNameInTable="DayColumn" msprop:Generator_UserColumnName="Day" type="xs:string" />
+              <xs:element name="TimeIn" msprop:Generator_ColumnVarNameInTable="columnTimeIn" msprop:Generator_ColumnPropNameInRow="TimeIn" msprop:Generator_ColumnPropNameInTable="TimeInColumn" msprop:Generator_UserColumnName="TimeIn" type="xs:string" />
+              <xs:element name="TimeOut" msprop:Generator_ColumnVarNameInTable="columnTimeOut" msprop:Generator_ColumnPropNameInRow="TimeOut" msprop:Generator_ColumnPropNameInTable="TimeOutColumn" msprop:Generator_UserColumnName="TimeOut" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -227,13 +227,7 @@
         <xs:element name="ProductTable" msprop:Generator_TableClassName="ProductTableDataTable" msprop:Generator_TableVarName="tableProductTable" msprop:Generator_TablePropName="ProductTable" msprop:Generator_RowDeletingName="ProductTableRowDeleting" msprop:Generator_RowChangingName="ProductTableRowChanging" msprop:Generator_RowEvHandlerName="ProductTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTableRowDeleted" msprop:Generator_UserTableName="ProductTable" msprop:Generator_RowChangedName="ProductTableRowChanged" msprop:Generator_RowEvArgName="ProductTableRowChangeEvent" msprop:Generator_RowClassName="ProductTableRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
+              <xs:element name="ProductID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
               <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -256,9 +250,6 @@
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:EmployeeScheduleTable" />
       <xs:field xpath="mstns:EmployeeID" />
-      <xs:field xpath="mstns:Day" />
-      <xs:field xpath="mstns:TimeIn" />
-      <xs:field xpath="mstns:TimeOut" />
     </xs:unique>
     <xs:unique name="EmployeeTable_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:EmployeeTable" />

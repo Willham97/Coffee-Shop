@@ -470,7 +470,7 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddEmployeeScheduleTableRow(ByVal parentEmployeeTableRowByEmployeeTableEmployeeScheduleTable As EmployeeTableRow, ByVal Day As Byte, ByVal TimeIn As Short, ByVal TimeOut As Short) As EmployeeScheduleTableRow
+        Public Overloads Function AddEmployeeScheduleTableRow(ByVal parentEmployeeTableRowByEmployeeTableEmployeeScheduleTable As EmployeeTableRow, ByVal Day As String, ByVal TimeIn As String, ByVal TimeOut As String) As EmployeeScheduleTableRow
             Dim rowEmployeeScheduleTableRow As EmployeeScheduleTableRow = CType(Me.NewRow,EmployeeScheduleTableRow)
             Dim columnValuesArray() As Object = New Object() {Nothing, Day, TimeIn, TimeOut}
             If (Not (parentEmployeeTableRowByEmployeeTableEmployeeScheduleTable) Is Nothing) Then
@@ -483,8 +483,8 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function FindByEmployeeIDDayTimeInTimeOut(ByVal EmployeeID As Integer, ByVal Day As Byte, ByVal TimeIn As Short, ByVal TimeOut As Short) As EmployeeScheduleTableRow
-            Return CType(Me.Rows.Find(New Object() {EmployeeID, Day, TimeIn, TimeOut}),EmployeeScheduleTableRow)
+        Public Function FindByEmployeeID(ByVal EmployeeID As Integer) As EmployeeScheduleTableRow
+            Return CType(Me.Rows.Find(New Object() {EmployeeID}),EmployeeScheduleTableRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -515,14 +515,15 @@ Partial Public Class ProjectDatabaseDataSet
         Private Sub InitClass()
             Me.columnEmployeeID = New Global.System.Data.DataColumn("EmployeeID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnEmployeeID)
-            Me.columnDay = New Global.System.Data.DataColumn("Day", GetType(Byte), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnDay = New Global.System.Data.DataColumn("Day", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnDay)
-            Me.columnTimeIn = New Global.System.Data.DataColumn("TimeIn", GetType(Short), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnTimeIn = New Global.System.Data.DataColumn("TimeIn", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTimeIn)
-            Me.columnTimeOut = New Global.System.Data.DataColumn("TimeOut", GetType(Short), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnTimeOut = New Global.System.Data.DataColumn("TimeOut", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTimeOut)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnEmployeeID, Me.columnDay, Me.columnTimeIn, Me.columnTimeOut}, true))
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnEmployeeID}, true))
             Me.columnEmployeeID.AllowDBNull = false
+            Me.columnEmployeeID.Unique = true
             Me.columnDay.AllowDBNull = false
             Me.columnTimeIn.AllowDBNull = false
             Me.columnTimeOut.AllowDBNull = false
@@ -1071,9 +1072,9 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddProductTableRow(ByVal ProductID As String, ByVal ProductName As String, ByVal CaseCost As String) As ProductTableRow
+        Public Overloads Function AddProductTableRow(ByVal ProductName As String, ByVal CaseCost As String) As ProductTableRow
             Dim rowProductTableRow As ProductTableRow = CType(Me.NewRow,ProductTableRow)
-            Dim columnValuesArray() As Object = New Object() {ProductID, ProductName, CaseCost}
+            Dim columnValuesArray() As Object = New Object() {Nothing, ProductName, CaseCost}
             rowProductTableRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowProductTableRow)
             Return rowProductTableRow
@@ -1081,7 +1082,7 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Function FindByProductID(ByVal ProductID As String) As ProductTableRow
+        Public Function FindByProductID(ByVal ProductID As Integer) As ProductTableRow
             Return CType(Me.Rows.Find(New Object() {ProductID}),ProductTableRow)
         End Function
         
@@ -1110,16 +1111,18 @@ Partial Public Class ProjectDatabaseDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnProductID = New Global.System.Data.DataColumn("ProductID", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            Me.columnProductID = New Global.System.Data.DataColumn("ProductID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnProductID)
             Me.columnProductName = New Global.System.Data.DataColumn("ProductName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnProductName)
             Me.columnCaseCost = New Global.System.Data.DataColumn("CaseCost", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCaseCost)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnProductID}, true))
+            Me.columnProductID.AutoIncrement = true
+            Me.columnProductID.AutoIncrementSeed = -1
+            Me.columnProductID.AutoIncrementStep = -1
             Me.columnProductID.AllowDBNull = false
             Me.columnProductID.Unique = true
-            Me.columnProductID.MaxLength = 255
             Me.columnProductName.MaxLength = 255
             Me.columnCaseCost.MaxLength = 255
         End Sub
@@ -1279,9 +1282,9 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property Day() As Byte
+        Public Property Day() As String
             Get
-                Return CType(Me(Me.tableEmployeeScheduleTable.DayColumn),Byte)
+                Return CType(Me(Me.tableEmployeeScheduleTable.DayColumn),String)
             End Get
             Set
                 Me(Me.tableEmployeeScheduleTable.DayColumn) = value
@@ -1290,9 +1293,9 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property TimeIn() As Short
+        Public Property TimeIn() As String
             Get
-                Return CType(Me(Me.tableEmployeeScheduleTable.TimeInColumn),Short)
+                Return CType(Me(Me.tableEmployeeScheduleTable.TimeInColumn),String)
             End Get
             Set
                 Me(Me.tableEmployeeScheduleTable.TimeInColumn) = value
@@ -1301,9 +1304,9 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property TimeOut() As Short
+        Public Property TimeOut() As String
             Get
-                Return CType(Me(Me.tableEmployeeScheduleTable.TimeOutColumn),Short)
+                Return CType(Me(Me.tableEmployeeScheduleTable.TimeOutColumn),String)
             End Get
             Set
                 Me(Me.tableEmployeeScheduleTable.TimeOutColumn) = value
@@ -1457,9 +1460,9 @@ Partial Public Class ProjectDatabaseDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Property ProductID() As String
+        Public Property ProductID() As Integer
             Get
-                Return CType(Me(Me.tableProductTable.ProductIDColumn),String)
+                Return CType(Me(Me.tableProductTable.ProductIDColumn),Integer)
             End Get
             Set
                 Me(Me.tableProductTable.ProductIDColumn) = value
@@ -1947,8 +1950,8 @@ Namespace ProjectDatabaseDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Original_EmployeeID As Integer, ByVal Original_Day As Byte, ByVal Original_TimeIn As Short, ByVal Original_TimeOut As Short) As Integer
-            Return Me.Update(Original_EmployeeID, Original_Day, Original_TimeIn, Original_TimeOut, Original_EmployeeID, Original_Day, Original_TimeIn, Original_TimeOut)
+        Public Overloads Overridable Function Update(ByVal Day As Byte, ByVal TimeIn As Short, ByVal TimeOut As Short, ByVal Original_EmployeeID As Integer, ByVal Original_Day As Byte, ByVal Original_TimeIn As Short, ByVal Original_TimeOut As Short) As Integer
+            Return Me.Update(Original_EmployeeID, Day, TimeIn, TimeOut, Original_EmployeeID, Original_Day, Original_TimeIn, Original_TimeOut)
         End Function
     End Class
     
