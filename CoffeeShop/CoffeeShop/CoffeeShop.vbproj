@@ -126,10 +126,10 @@
     <Compile Include="ProjectDatabaseDataSet.vb">
       <DependentUpon>ProjectDatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ScheduleForm.Designer.vb">
-      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    <Compile Include="SchedualForm.Designer.vb">
+      <DependentUpon>SchedualForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ScheduleForm.vb">
+    <Compile Include="SchedualForm.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -155,8 +155,8 @@
     <EmbeddedResource Include="OrdersForm.resx">
       <DependentUpon>OrdersForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ScheduleForm.resx">
-      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    <EmbeddedResource Include="SchedualForm.resx">
+      <DependentUpon>SchedualForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

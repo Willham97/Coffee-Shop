@@ -25,7 +25,7 @@ Partial Class frmOrders
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOrders))
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ProjectDatabaseDataSet = New CoffeeShop.ProjectDatabaseDataSet()
         Me.ProductTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -71,18 +71,18 @@ Partial Class frmOrders
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnPrint
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gold
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button2.Location = New System.Drawing.Point(280, 362)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(157, 46)
-        Me.Button2.TabIndex = 71
-        Me.Button2.Text = "Print"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnPrint.BackColor = System.Drawing.Color.Gold
+        Me.btnPrint.FlatAppearance.BorderSize = 0
+        Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrint.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnPrint.Location = New System.Drawing.Point(280, 362)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(157, 46)
+        Me.btnPrint.TabIndex = 71
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -283,7 +283,7 @@ Partial Class frmOrders
         Me.Controls.Add(Me.ProductTableDataGridView)
         Me.Controls.Add(Me.ProductTableBindingNavigator)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.Button1)
         Me.Name = "frmOrders"
         Me.Text = "Orders"
@@ -298,7 +298,7 @@ Partial Class frmOrders
 
     End Sub
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnPrint As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents ProjectDatabaseDataSet As ProjectDatabaseDataSet
     Friend WithEvents ProductTableBindingSource As BindingSource

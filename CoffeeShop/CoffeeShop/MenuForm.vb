@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub btnSchedual_Click(sender As Object, e As EventArgs) Handles btnSchedual.Click
-        Dim schedual = New ScheduleForm()
+        Dim schedual = New SchedualForm()
         schedual.Show()
         Me.Hide()
 
