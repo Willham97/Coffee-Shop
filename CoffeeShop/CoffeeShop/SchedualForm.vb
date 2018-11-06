@@ -6,18 +6,16 @@ Public Class SchedualForm
 
     'OPEN MAIN MENU FORM AND CLOSE THIS ONE?
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        'TODO; Open main menu form.
         Me.Close()
     End Sub
 
-    'OPEN EMPLOYEE FORM AND CLOSE THIS ONE?
-    Private Sub btnEmployees_Click(sender As Object, e As EventArgs) Handles btnEmployees.Click
-        'TODO; Open employees form.
-    End Sub
+
 
     'SAVE ON FORM CLOSE
     Private Sub SchedualForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         btnSave.PerformClick()
+        Dim menu = New frmMenu()
+        menu.Show()
     End Sub
 
     'LOAD FUNCTIONALITY; not from database but instead from file
@@ -28,7 +26,7 @@ Public Class SchedualForm
             Dim fReader As StreamReader = File.OpenText(MANUALSCHEDULE_PATH)
             For i As Decimal = 420 To 1170 Step 30
                 Dim line As String() = fReader.ReadLine().Split(vbTab)
-                DataGridView1.Rows.Add(line(0), line(1), line(2), line(3), line(4), line(5), line(6), line(7), line(8))
+                DataGridView1.Rows.Add(line(0), line(1), line(2), line(3), line(4), line(5), line(6), line(7), line(8), line(9), line(10), line(11))
                 DataGridView1.Rows(DataGridView1.Rows.Count - 1).HeaderCell.Value = New DateTime().AddMinutes(i).ToShortTimeString()
             Next
             fReader.Close()

@@ -2,9 +2,8 @@
 
 Public Class frmOrders
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim menu = New frmMenu()
-        menu.Show()
-        Me.Hide()
+
+        Me.Close()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -63,5 +62,10 @@ Public Class frmOrders
                 e.MarginBounds.Height)
             End If
         End Using
+    End Sub
+
+    Private Sub frmOrders_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim menu = New frmMenu()
+        menu.Show()
     End Sub
 End Class

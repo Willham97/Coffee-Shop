@@ -26,4 +26,6 @@
         Me.ProductTableTableAdapter.Fill(Me.ProjectDatabaseDataSet.ProductTable)
 
     End Sub
+
+
 End Class

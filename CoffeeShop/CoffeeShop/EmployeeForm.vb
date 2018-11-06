@@ -18,8 +18,12 @@
     End Sub
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+
+        Me.Close()
+    End Sub
+
+    Private Sub EmployeeForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         Dim menu = New frmMenu()
         menu.Show()
-        Me.Hide()
     End Sub
 End Class
